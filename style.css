@@ -1,0 +1,118 @@
+.container {
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+}
+.feedback {
+    background: url("Imagem.png") center right no-repeat;
+    background-position: center right;
+    background-size: 47%;
+}
+.feedback__in {
+    width: 50%;
+    padding: 50px;
+    background: rgba(168, 94, 180, 0.10);
+    box-sizing: border-box;
+}
+.feedback__title {
+    color: #171717;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+.feedback__description {
+    color: #707070;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.feedback__form {
+    margin-top: 71px;
+    display: grid;
+    grid-gap: 25px;
+}
+.feedback__form-small {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+}
+.feedback__form-small input {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #BA68C8;
+    padding: 18px 0;
+}
+.feedback__form textarea {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #BA68C8;
+    width: 100%;
+    resize: none;
+}
+.feedback__form button {
+    border-radius: 17px;
+    background: #9553A0;
+    color: #F9F7F7;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    max-width: 171px;
+    width: 100%;
+    text-align: center;
+    padding: 22px 0;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+}
+.feedback__form button:hover {
+    background: #c278cf;
+}
+@media all and (max-width:900px) {
+    .feedback {
+        background: none;
+    }
+    .feedback__in {
+        width: 100%;
+    }
+}
+@media all and (max-width:500px) {
+    .feedback__form-small {
+        grid-template-columns: 1fr;
+    }
+    .feedback__in {
+        padding: 30px;
+    }
+    .feedback__form {
+        margin-top: 50px;
+    }
+}
+.error,
+.error-empty-mail,
+.error-empty-phone {
+    color: red;
+    display: none;
+}
+.error-status,
+.thx-mess {
+    display: none;
+    padding: 5px;
+    background: #9553A0;
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    border-radius: 7px;
+}
+.thx-mess.active,
+.error-status.active {
+    display: block;
+}
